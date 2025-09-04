@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router";
 
 // Pages
 import Home from "../../pages/Home";
@@ -13,7 +13,7 @@ import Navigation from "../../layouts/Navigation";
 
 function AppRoutes() {
     return (
-        <HashRouter>
+        <Router>
             <Navigation />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -25,7 +25,7 @@ function AppRoutes() {
                 <Route path="/weather" element={<Weather />} />
                 <Route path="/buttons" element={<Buttons />} />
             </Routes>
-        </HashRouter>
+        </Router>
     );
 }
 
