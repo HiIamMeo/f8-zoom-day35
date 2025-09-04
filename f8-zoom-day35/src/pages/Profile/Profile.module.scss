@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--card-bg);
+}
+
+.title {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.userName {
+  margin: 6px 0;
+  color: var(--text);
+}
+
+.infoList {
+  color: var(--text);
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.infoList li {
+  margin-bottom: 6px;
+}

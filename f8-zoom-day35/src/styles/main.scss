@@ -1,0 +1,86 @@
+/* src/styles/main.scss */
+
+/* CSS variables dùng toàn site */
+:root {
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --bg-soft: #f9fafb;
+  --primary-bg: #eef2ff;
+  --primary-border: #c7d2fe;
+  --text: #111827;
+  --card-bg: #ffffff;
+}
+
+/* Dark theme variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border: #374151;
+    --muted: #9ca3af;
+    --bg: #111827;
+    --bg-soft: #1f2937;
+    --primary-bg: #312e81;
+    --primary-border: #4f46e5;
+    --text: #f9fafb;
+    --card-bg: #1f2937;
+  }
+}
+
+/* Layout cơ bản */
+html, body { height: 100%; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Container chung cho page content */
+.container {
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* Card + row + helper text */
+.card { 
+  border: 1px solid var(--border); 
+  border-radius: 14px; 
+  padding: 16px; 
+  background: var(--card-bg); 
+}
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.small { color: var(--muted); font-size: .92rem; }
+
+/* Button base (cho các <button> thường – Button component thì vẫn dùng module riêng) */
+button {
+  padding: 10px 14px; 
+  border-radius: 10px; 
+  border: 1px solid var(--border);
+  background: var(--bg-soft); 
+  color: var(--text);
+  cursor: pointer;
+  transition: filter .15s ease;
+}
+button:hover { filter: brightness(.95); }
+
+/* Grid tiện dụng cho Products/Comments */
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+
+/* State text */
+.empty, .muted { color: var(--muted); }
+
+/* Counter helpers – tái sử dùng ở Counter page */
+.count { font-size: 56px; line-height: 1; margin: 8px 0; }
+.positive { color: #22c55e; } 
+.negative { color: #ef4444; } 
+.zero { color: #9ca3af; }
+
+/* Dark mode nhẹ (tùy chọn) */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b0b0b; --bg-soft:#121212; --text:#e5e7eb;
+    --border:#2a2a2a; --primary-bg:#1a1f2e; --primary-border:#334155;
+  }
+  body{ background: var(--bg); }
+  .card{ background:#0f0f0f; }
+}

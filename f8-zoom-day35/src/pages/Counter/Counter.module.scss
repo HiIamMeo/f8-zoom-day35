@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--card-bg);
+}
+
+.title {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.count {
+  font-size: 56px;
+  line-height: 1;
+  margin: 8px 0;
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #ef4444;
+}
+
+.zero {
+  color: var(--muted);
+}
+
+.status {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}

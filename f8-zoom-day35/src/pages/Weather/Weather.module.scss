@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--card-bg);
+}
+
+.title {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+.weatherData {
+  margin-top: 14px;
+}
+
+.cityName {
+  margin: 6px 0;
+  color: var(--text);
+}
+
+.weatherList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+  color: var(--text);
+}
+
+.weatherList li {
+  margin-bottom: 4px;
+}

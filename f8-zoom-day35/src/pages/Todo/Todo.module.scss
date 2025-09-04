@@ -1,0 +1,66 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--card-bg);
+}
+
+.title {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.todoForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+.todoList {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  background: var(--bg-soft);
+}
+
+.todoLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.kpi {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.empty {
+  color: var(--muted);
+  margin-top: 10px;
+}

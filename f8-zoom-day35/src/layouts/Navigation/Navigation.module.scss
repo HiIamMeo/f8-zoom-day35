@@ -1,0 +1,44 @@
+/* src/components/layouts/Navigation/Navigation.module.scss */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 10px 12px;
+  list-style: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item { flex: 0 0 auto; }
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--text);
+  text-decoration: none;
+  font-size: .95rem;
+  line-height: 1;
+  transition: filter .15s ease, background .15s ease, border-color .15s ease;
+
+  &:hover { filter: brightness(.98); }
+  &:focus-visible { outline: 2px solid var(--primary-border); outline-offset: 2px; }
+}
+
+.active {
+  background: var(--primary-bg);
+  border-color: var(--primary-border);
+}
